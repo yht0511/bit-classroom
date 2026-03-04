@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+sqlalchemy
+apscheduler
+python-dotenv
+bit_login
+pydantic
+requests
