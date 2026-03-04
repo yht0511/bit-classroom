@@ -15,6 +15,9 @@ models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
+if not os.path.exists("app/static"):
+    os.makedirs("app/static")
+
 app.mount("/static", StaticFiles(directory="app/static"), name="static")
 
 def get_db():
